@@ -62,6 +62,22 @@ Cosine similarity is a metric used to measure how similar the documents are irre
 
 
 
-# Tools and Libraries used
-- Pytg
+# Data PreProcessing:
+
+In this step I have peprocessed the given datasets in order to obtain the cleaned data.
+- Extracted the top 3 cast names from cast feature
+- Extracted the director name from crew feature
+- Extracted genres name  from the genres feature
+- Removed all the stopwords
+- Removed all the extra spaces from all columns
+- Converted "tags" column into lower case
+
+# Using CountVectorizer to Extracting Features from Text
+CountVectorizer is a great tool provided by the scikit-learn library in Python. It is used to transform a given text into a vector on the basis of the frequency (count) of each word that occurs in the entire text. This is helpful when we have multiple such texts, and we wish to convert each word in each text into vectors (for using in further text analysis).
+It creates a matrix in which each unique word is represented by a column of the matrix, and each text sample from the document is a row in the matrix. The value of each cell is nothing but the count of the word in that particular text sample. 
+
+# Stemming:
+Stemming is the process of reducing a word to its word stem that affixes to suffixes and prefixes or to the roots of words known as a lemma. Stemming is important in natural language understanding (NLU) and natural language processing (NLP).
+
+Lemmatization. This algorithm collects all inflected forms of a word in order to break them down to their root dictionary form or lemma. Words are broken down into a part of speech (the categories of word types) by way of the rules of grammar.
 
